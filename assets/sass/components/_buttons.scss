@@ -1,0 +1,15 @@
+.primary-btn {
+    border: 1px solid $smoky-black;
+    font-family: $raleway;
+    font-weight: $bold;
+    color: $smoky-black;
+
+    &--hover:hover {
+        border-color: $quick-silver;
+    }
+
+    &--focus:focus {
+        border-color: $quick-silver;
+        color: $quick-silver;
+    }
+}

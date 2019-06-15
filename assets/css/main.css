@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #fff;
+  height: 4em;
+}
+.navigation__logo {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  background-color: #0C0910;
+  color: #fff;
+  padding: 1.5em 1em;
+  font-family: "Old Standard TT", serif;
+  transform: rotate(-90deg);
+  height: 4em;
+  width: 4em;
+  text-align: center;
+}
+.navigation__container {
+  float: right;
+}
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation__item {
+  float: left;
+  text-align: center;
+  padding: 1.5em;
+}
+.navigation__item a {
+  color: #0C0910;
+  text-decoration: none;
+}
+
+.main-section__featured-image {
+  background-image: url(../img/main-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.primary-btn {
+  border: 1px solid #0C0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #0C0910;
+}
+.primary-btn--hover:hover {
+  border-color: #A6A5A8;
+}
+.primary-btn--focus:focus {
+  border-color: #A6A5A8;
+  color: #A6A5A8;
+}
+
+/*# sourceMappingURL=main.css.map */
