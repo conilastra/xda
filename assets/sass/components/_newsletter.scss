@@ -1,12 +1,14 @@
 .main-section__newsletter {
-    
+    background-color: $smoky-black;
+    height: 10rem; 
+    padding: 1em 5em;   
+
     &__content {
         box-sizing: border-box;
-        padding: 3em;
+        padding-top: 2.5em;
         background-color: $smoky-black;
         color: $white;
-        margin: 0;
-        min-height: 30vh;
+        
         
 
         &__text {
@@ -22,14 +24,4 @@
             width: 20%;
         }
     } 
-
-    &__subscribe {
-        position: relative;
-        float: right;
-        color: $smoky-black;
-        background-color: $white;
-        transform: rotate(90deg);
-        padding: 1rem 3rem;
-        margin: 0;
-    }
 }

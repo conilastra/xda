@@ -1,14 +1,19 @@
-.main-section {
-    &__cover {
-        background-image: url(../img/main-image.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+.cover {
+    background-image: url(../img/main-image.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 60vh;
+}
+@media (min-width: 768px) {
+    .cover {
+        height: 70vh; 
     }
 }
 
-@media (min-width: 1200px) {
-    .main-section__cover {
+
+@media (min-width: 992px) {
+    .cover {
         display: none;
     }
 }

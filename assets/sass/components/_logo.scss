@@ -4,10 +4,11 @@
     box-sizing: border-box;
     background-color: $smoky-black;
     color: $white;
-    padding: 1.5em 1em;
+    padding: 1em 1em;
     font-family: $old-standard;
     // transform: rotate(-90deg);
     height: 4em;
     width: 4em;
     text-align: center;
+    font-size: $x-large;
 }

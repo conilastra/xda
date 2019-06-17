@@ -2,26 +2,30 @@
   /* header */
   
 .navigation {
-    background-color: $white;
-    position: relative;
-    width: 100%;
+  background-color: $white;
+  position: relative;
+  width: 100%;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-    }
-    
-    li a {
-        display: block;
-        text-align: left;
-        color: $smoky-black;
-        font-family: $raleway;
-        text-align: center;
-        padding: 0 1em;
-        text-decoration: none;
-    }
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+  }
+  
+  li a {
+      display: block;
+      text-align: left;
+      color: $smoky-black;
+      font-family: $raleway;
+      text-align: center;
+      padding: 0 1em;
+      text-decoration: none;
+  }
+
+  .navicon {
+    padding: .1rem;
+  }
 }
     
     
@@ -40,7 +44,7 @@
     .menu-icon {
         cursor: pointer;
         float: right;
-        padding: 28px 20px;
+        padding: 1rem;
         position: relative;
         user-select: none;
     }

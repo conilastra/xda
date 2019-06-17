@@ -328,11 +328,12 @@ h4 {
   box-sizing: border-box;
   background-color: #0C0910;
   color: #fff;
-  padding: 1.5em 1em;
+  padding: 1em 1em;
   font-family: "Old Standard TT", serif;
   height: 4em;
   width: 4em;
   text-align: center;
+  font-size: 20px;
 }
 
 /* header */
@@ -356,6 +357,9 @@ h4 {
   padding: 0 1em;
   text-decoration: none;
 }
+.navigation .navicon {
+  padding: 0.1rem;
+}
 
 /* menu */
 .navigation__menu {
@@ -368,7 +372,7 @@ h4 {
 .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 28px 20px;
+  padding: 1rem;
   position: relative;
   user-select: none;
 }
@@ -419,19 +423,42 @@ h4 {
     display: none;
   }
 }
-.main-section__intro {
-  min-width: 70%;
-  padding: 3em;
-  height: 50vh;
+.cover {
+  background-image: url(../img/main-image.png);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  height: 60vh;
 }
 
+@media (min-width: 768px) {
+  .cover {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .cover {
+    display: none;
+  }
+}
+.main-section__intro {
+  padding: 2em 4em;
+  width: 60%;
+}
+.main-section__intro p {
+  padding: 1em 0;
+}
+
+.main-section__newsletter {
+  background-color: #0C0910;
+  height: 10rem;
+  padding: 1em 5em;
+}
 .main-section__newsletter__content {
   box-sizing: border-box;
-  padding: 3em;
+  padding-top: 2.5em;
   background-color: #0C0910;
   color: #fff;
-  margin: 0;
-  min-height: 30vh;
 }
 .main-section__newsletter__content__text {
   position: relative;
@@ -443,15 +470,6 @@ h4 {
   float: left;
   clear: left;
   width: 20%;
-}
-.main-section__newsletter__subscribe {
-  position: relative;
-  float: right;
-  color: #0C0910;
-  background-color: #fff;
-  transform: rotate(90deg);
-  padding: 1rem 3rem;
-  margin: 0;
 }
 
 .primary-btn {
@@ -470,6 +488,23 @@ h4 {
 .primary-btn--focus:focus {
   border-color: #A6A5A8;
   color: #A6A5A8;
+}
+
+.subscribe-btn {
+  position: relative;
+  float: right;
+  left: 10.4em;
+  color: #0C0910;
+  background-color: #fff;
+  transform: rotate(90deg);
+  padding: 1rem 4.5rem;
+  margin: 0;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  width: 14rem;
 }
 
 /*# sourceMappingURL=main.css.map */
