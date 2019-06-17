@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Raleway:400,700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -18,11 +22,14 @@
 <body>
     <header>
         <nav class="navigation row">
-            <div class="navigation__logo">
+            <div class="logo">
                 <h1>XDA</h1>
             </div>
-
-            <div class="navigation__container">
+            <div class="collapsible col-xs-12">>
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-bars"></i></label>
+            </div>
+            <div class="navidation__container">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#">Mujer</a></li>
                     <li class="navigation__item"><a href="#">Hombre</a></li>
@@ -33,30 +40,36 @@
         </nav>
     </header>
 
-    <main class="main-section">
-        <div class="row">
-            <div class="main-section__featured-image col-xs-12 col-lg-8"></div>
-            <div class="main-section__container row col-xs-12 col-lg-4">
-                <div class="main-section__main-content col-xs-12">
+    <main class="container">
+        <section class="main-section row">
+            <div class="col-xs-12 col-lg-5">
+                <div class="main-section__intro">
                     <h2>LOREM IPSUM AD VALOREM</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim soluta voluptates delectus tempora,
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim soluta voluptates delectus
+                        tempora,
                         eaque reprehenderit quae repudiandae est temporibus ex magni nulla praesentium nam dolore
                         maiores facere quia beatae? Qui!</p>
                     <button type="button" class="primary-btn">Ir a tienda</button>
                 </div>
+
                 <div class="main-section__newsletter">
-                    <h3>Newsletter</h3>
-                    <h4>Correo electrónico</h4>
-                    <div class="main-section__email-box">
-                        <input type="text" class="email-box__input" placeholder="Ingresa tu correo electrónico">
-                    </div>
-                    <div class="main-section__subscribe">
-                        <h4>Suscribir</h4>
+                    <div class="main-section__newsletter__content">
+                        <h3 class="main-section__newsletter__text">Newsletter</h3>
+                        <h4 class="main-section__newsletter__text">Correo electrónico</h4>
+                        <div class="main-section__newsletter__email-box">
+                            <input type="text" class="main-section__newsletter__email-box__input"
+                                placeholder="Ingresa tu correo electrónico">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="main-section__img col-lg-7"></div>
+
+        </section>
+
     </main>
+
 
 </body>
 

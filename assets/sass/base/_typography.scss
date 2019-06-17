@@ -1,4 +1,29 @@
+p {
+    font-family: $raleway;
+    font-weight: $regular;
+    color: $granite-gray;
+}
+
 a {
     font-family: $raleway;
     font-weight: $bold;
+}
+
+
+h2 {
+    font-family: $old-standard;
+    font-size: $xx-large;
+    font-weight: $bold;
+}
+
+h3 {
+    font-family: $old-standard;
+    font-size: $x-large;
+    font-weight: $bold;
+}
+
+h4 {
+    font-family: $old-standard;
+    font-size: $large;
+    font-weight: $regular;
 }

@@ -1,11 +1,17 @@
 @import 'abstracts/variables';
 
 @import 'base/reset';
+@import 'base/base';
 @import 'base/typography';
 
-@import 'layout/navigation';
 @import 'layout/grid';
+@import 'layout/navigation';
 @import 'layout/main-section';
-@import 'layout/newsletter';
 
+
+@import 'components/logo';
+@import 'components/navbar';
+@import 'components/intro';
+@import 'components/newsletter';
 @import 'components/buttons';
+

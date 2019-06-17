@@ -3,39 +3,7 @@
     background-color: $white;
     height: 4em;
     
-    &__logo {
-        position: relative;
-        float: left;
-        box-sizing: border-box;
-        background-color: $smoky-black;
-        color: $white;
-        padding: 1.5em 1em;
-        font-family: $old-standard;
-        transform: rotate(-90deg);
-        height: 4em;
-        width: 4em;
-        text-align: center;
-    }
-
     &__container {
         float: right;
-    }
-
-    &__list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__item {
-        float: left;
-        text-align: center;
-        padding: 1.5em;
-
-        a {
-            color: $smoky-black;
-            text-decoration: none;
-        }
-    }
-    
+    } 
 }

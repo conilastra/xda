@@ -1,10 +1,15 @@
 .main-section {
-
-    &__img {
+    &__cover {
         background-image: url(../img/main-image.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-section__cover {
+        display: none;
     }
 }
 

@@ -2,7 +2,11 @@
     border: 1px solid $smoky-black;
     font-family: $raleway;
     font-weight: $bold;
+    font-size: $small;
     color: $smoky-black;
+    background: $white;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
 
     &--hover:hover {
         border-color: $quick-silver;
