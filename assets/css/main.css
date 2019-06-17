@@ -322,7 +322,7 @@ h4 {
   background-size: cover;
 }
 
-.logo {
+.navigation__logo {
   position: relative;
   float: left;
   box-sizing: border-box;
@@ -335,45 +335,90 @@ h4 {
   text-align: center;
 }
 
+/* header */
 .navigation {
+  background-color: #fff;
   position: relative;
+  width: 100%;
 }
-.navigation__list {
-  list-style-type: none;
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
 }
-.navigation__item a {
+.navigation li a {
   display: block;
   text-align: left;
   color: #0C0910;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   padding: 0 1em;
   text-decoration: none;
-  font-size: 1.2rem;
 }
 
-.collapsible {
-  text-align: right;
-}
-.collapsible label {
-  display: block;
-  padding: 0.5em 1.5em 0.5em 0;
-  font-size: 1.8rem;
+/* menu */
+.navigation__menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
-#menu {
+/* menu icon */
+.menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* menu btn */
+.menu-btn {
   display: none;
 }
 
-input:checked ~ .navigation__container {
-  max-height: 100%;
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
 }
 
-.navigation__container {
-  max-height: 0;
-  padding: 0;
-  overflow: hidden;
+.menu-btn:checked ~ .navicon {
+  background: transparent;
 }
 
+.menu-btn:checked ~ .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .navigation li {
+    float: left;
+  }
+
+  .navigation li a {
+    padding: 20px 30px;
+  }
+
+  .navigation__menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
 .main-section__intro {
   min-width: 70%;
   padding: 3em;
