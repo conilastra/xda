@@ -449,27 +449,38 @@ h4 {
   padding: 1em 0;
 }
 
-.main-section__newsletter {
-  background-color: #0C0910;
-  height: 10rem;
-  padding: 1em 5em;
-}
-.main-section__newsletter__content {
+.newsletter__content {
   box-sizing: border-box;
-  padding-top: 2.5em;
   background-color: #0C0910;
   color: #fff;
+  padding: 5rem 3rem;
 }
-.main-section__newsletter__content__text {
-  position: relative;
-  float: left;
-  clear: both;
+.newsletter__subscribe {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #0C0910;
+  height: 100%;
 }
-.main-section__newsletter__content__email-box {
+.newsletter__subscribe__text {
+  transform: rotate(90deg);
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
   position: relative;
-  float: left;
-  clear: left;
-  width: 20%;
+  top: 50%;
+}
+.newsletter input {
+  width: 50%;
+}
+
+:placeholder-shown {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  color: #0C0910;
+  padding: 0.5em;
+  opacity: 1;
+}
+:placeholder-shown .col-xs-1 {
+  max-width: 10%;
 }
 
 .primary-btn {

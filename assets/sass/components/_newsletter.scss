@@ -1,27 +1,43 @@
-.main-section__newsletter {
-    background-color: $smoky-black;
-    height: 10rem; 
-    padding: 1em 5em;   
+.newsletter {  
 
     &__content {
         box-sizing: border-box;
-        padding-top: 2.5em;
         background-color: $smoky-black;
         color: $white;
+        padding: 5rem 3rem;
         
-        
+    } 
+
+    &__subscribe {
+        box-sizing: border-box;
+        // padding: 5em;
+        background-color: $white;
+        color: $smoky-black;
+        height: 100%;
 
         &__text {
+            transform: rotate(90deg);
+            font-family: $old-standard;
+            font-weight: $bold;
             position: relative;
-            float: left;
-            clear: both;
+            top: 50%;
         }
+    }
 
-        &__email-box {
-            position: relative;
-            float: left;
-            clear: left;
-            width: 20%;
-        }
-    } 
+    input {
+        width: 50%;
+    }
+}
+
+:placeholder-shown  {
+    font-family: $raleway;
+    font-size: $x-small;
+    color: $smoky-black;
+    padding: .5em;
+    opacity: 1;
+
+
+    .col-xs-1 {
+        max-width: 10%;
+    }
 }
