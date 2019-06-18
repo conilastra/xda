@@ -4,28 +4,33 @@
         box-sizing: border-box;
         background-color: $smoky-black;
         color: $white;
-        padding: 5rem 3rem;
+        padding: 1rem 2rem;
+
+        h5 {
+            font-size: $small;
+        }
         
     } 
 
     &__subscribe {
         box-sizing: border-box;
-        // padding: 5em;
         background-color: $white;
         color: $smoky-black;
         height: 100%;
+        width: 10vw;
 
         &__text {
             transform: rotate(90deg);
             font-family: $old-standard;
             font-weight: $bold;
             position: relative;
-            top: 50%;
+            top: 40%;
+            font-size: $small;
         }
     }
 
     input {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -39,5 +44,38 @@
 
     .col-xs-1 {
         max-width: 10%;
+    }
+}
+
+@media (min-width: 768px) {
+    .newsletter {
+        min-height: 20vh;
+        background-color: $smoky-black;
+        color: $white;
+        box-sizing: border-box;
+
+        h5 {
+            padding: .3rem 0;
+        }
+        
+
+        &__content {
+            margin: auto 0;
+            padding: 3.6rem 4rem;
+        }
+
+        &__subscribe {
+            width: 7vw;
+
+            &__text {
+                top: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter__subscribe {
+        width: 4vw;
     }
 }

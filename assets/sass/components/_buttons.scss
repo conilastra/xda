@@ -6,7 +6,7 @@
     color: $smoky-black;
     background: $white;
     padding: .5rem 1rem;
-    margin: 1rem 0;
+    margin: .5rem 0;
 
     &--hover:hover {
         border-color: $quick-silver;
@@ -33,4 +33,11 @@
     text-align: center;
     border: none;
     width: 14rem;
+}
+
+@media (min-width: 768px) {
+    .primary-btn {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }

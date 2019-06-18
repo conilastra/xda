@@ -10,6 +10,12 @@ a {
 }
 
 
+h1 {
+    font-family: $old-standard;
+    font-size: $x-large;
+    font-weight: $bold;
+}
+
 h2 {
     font-family: $old-standard;
     font-size: $xx-large;
@@ -25,5 +31,11 @@ h3 {
 h4 {
     font-family: $old-standard;
     font-size: $large;
+    font-weight: $regular;
+}
+
+h5 {
+    font-family: $old-standard;
+    font-size: $medium;
     font-weight: $regular;
 }

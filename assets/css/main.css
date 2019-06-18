@@ -68,6 +68,12 @@ a {
   font-weight: 700;
 }
 
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 h2 {
   font-family: "Old Standard TT", serif;
   font-size: 30px;
@@ -83,6 +89,12 @@ h3 {
 h4 {
   font-family: "Old Standard TT", serif;
   font-size: 18px;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: "Old Standard TT", serif;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -375,6 +387,7 @@ h4 {
   padding: 1rem;
   position: relative;
   user-select: none;
+  font-size: 1.3rem;
 }
 
 /* menu btn */
@@ -426,14 +439,14 @@ h4 {
 .cover {
   background-image: url(../img/main-image.png);
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: top;
   background-size: cover;
-  height: 60vh;
+  height: 33vh;
 }
 
 @media (min-width: 768px) {
   .cover {
-    height: 70vh;
+    background-position: 0 33%;
   }
 }
 @media (min-width: 992px) {
@@ -442,34 +455,54 @@ h4 {
   }
 }
 .main-section__intro {
-  padding: 2em 4em;
-  width: 60%;
+  margin: 1.5em auto;
+  width: 80%;
+}
+.main-section__intro span {
+  display: none;
 }
 .main-section__intro p {
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
+@media (min-width: 768px) {
+  .main-section__intro {
+    margin: 1rem 0 6rem 4rem;
+    width: 56%;
+  }
+  .main-section__intro h2 {
+    font-size: 2.5em;
+  }
+  .main-section__intro span {
+    display: inline;
+  }
+}
 .newsletter__content {
   box-sizing: border-box;
   background-color: #0C0910;
   color: #fff;
-  padding: 5rem 3rem;
+  padding: 1rem 2rem;
+}
+.newsletter__content h5 {
+  font-size: 14px;
 }
 .newsletter__subscribe {
   box-sizing: border-box;
   background-color: #fff;
   color: #0C0910;
   height: 100%;
+  width: 10vw;
 }
 .newsletter__subscribe__text {
   transform: rotate(90deg);
   font-family: "Old Standard TT", serif;
   font-weight: 700;
   position: relative;
-  top: 50%;
+  top: 40%;
+  font-size: 14px;
 }
 .newsletter input {
-  width: 50%;
+  width: 100%;
 }
 
 :placeholder-shown {
@@ -483,6 +516,32 @@ h4 {
   max-width: 10%;
 }
 
+@media (min-width: 768px) {
+  .newsletter {
+    min-height: 20vh;
+    background-color: #0C0910;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  .newsletter h5 {
+    padding: 0.3rem 0;
+  }
+  .newsletter__content {
+    margin: auto 0;
+    padding: 3.6rem 4rem;
+  }
+  .newsletter__subscribe {
+    width: 7vw;
+  }
+  .newsletter__subscribe__text {
+    top: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .newsletter__subscribe {
+    width: 4vw;
+  }
+}
 .primary-btn {
   border: 1px solid #0C0910;
   font-family: "Raleway", sans-serif;
@@ -491,7 +550,7 @@ h4 {
   color: #0C0910;
   background: #fff;
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .primary-btn--hover:hover {
   border-color: #A6A5A8;
@@ -516,6 +575,13 @@ h4 {
   text-align: center;
   border: none;
   width: 14rem;
+}
+
+@media (min-width: 768px) {
+  .primary-btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

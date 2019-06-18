@@ -1,13 +1,13 @@
 .cover {
     background-image: url(../img/main-image.png);
     background-repeat: no-repeat;
-    background-position: 50% 20%;
+    background-position: top;
     background-size: cover;
-    height: 60vh;
+    height: 33vh;
 }
 @media (min-width: 768px) {
     .cover {
-        height: 70vh; 
+        background-position: 0 33%;
     }
 }
 
