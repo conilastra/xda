@@ -1,7 +1,8 @@
 .navigation__logo {
     position: relative;
     float: left;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: $smoky-black;
     color: $white;
     padding: 1em 1em;

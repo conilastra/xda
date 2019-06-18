@@ -1,102 +1,110 @@
 
   /* header */
   
-.navigation {
-  background-color: $white;
-  position: relative;
-  width: 100%;
-
-  ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      overflow: hidden;
-  }
+  .navigation {
+    background-color: $white;
+    position: relative;
+    width: 100%;
   
-  li a {
-      display: block;
-      text-align: left;
-      color: $smoky-black;
-      font-family: $raleway;
-      text-align: center;
-      padding: 0 1em;
-      text-decoration: none;
-  }
-
-  .navicon {
-    padding: .1rem;
-  }
-}
-    
-    
-
-
-    /* menu */
-    
-    .navigation__menu {
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-out;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
     }
     
-    /* menu icon */
-    
-    .menu-icon {
-      cursor: pointer;
-      float: right;
-      padding: 1rem;
-      position: relative;
-      user-select: none;
-      font-size: 1.3rem;
+    li a {
+        display: block;
+        text-align: left;
+        color: $smoky-black;
+        font-family: $raleway;
+        text-align: center;
+        padding: 0 1em;
+        text-decoration: none;
     }
-
-    
-    
-   /* menu btn */
-
-   .menu-btn {
-    display: none;
-  }
   
-  .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .menu-btn:checked ~ .navicon {
-    background: transparent;
-  }
-  
-  .menu-btn:checked ~ .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .menu-btn:checked ~ .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .navigation li {
-      float: left;
+    .navicon {
+      padding: .1rem;
     }
-    .navigation li a {
-      padding: 20px 30px;
-    }
-    .navigation__menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .menu-icon {
+  }
+      
+      
+  
+  
+      /* menu */
+      
+      .navigation__menu {
+          clear: both;
+          max-height: 0;
+          -webkit-transition: max-height .2s ease-out;
+          -o-transition: max-height .2s ease-out;
+          transition: max-height .2s ease-out;
+      }
+      
+      /* menu icon */
+      
+      .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding: 1rem;
+        position: relative;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        font-size: 1.3rem;
+      }
+  
+      
+      
+     /* menu btn */
+  
+     .menu-btn {
       display: none;
     }
-  }
-  
     
-   
+    .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+    
+    .menu-btn:checked ~ .navicon {
+      background: transparent;
+    }
+    
+    .menu-btn:checked ~ .navicon:before {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    
+    .menu-btn:checked ~ .navicon:after {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+    
+    
+    @media (min-width: 768px) {
+      .navigation li {
+        float: left;
+      }
+      .navigation li a {
+        padding: 20px 30px;
+      }
+      .navigation__menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .menu-icon {
+        display: none;
+      }
+    }
+    
+      
+     
